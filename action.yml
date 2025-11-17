@@ -1,0 +1,12 @@
+name: 'Setup Geckodriver'
+description: 'Install and setup a specific version of Geckodriver'
+author: "Shin'ya Ueoka"
+inputs:
+  geckodriver-version:
+    description: 'The Geckodriver version to install and use. Examples: 0.28.0, latest.'
+  token:
+    description: 'The GitHub token to use for requests to the GitHub API. Allows a higher rate limit.'
+
+runs:
+  using: 'node20'
+  main: 'index.js'
